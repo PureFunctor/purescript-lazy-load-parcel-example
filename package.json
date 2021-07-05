@@ -1,0 +1,21 @@
+{
+  "name": "purescript-lazy-load-parcel",
+  "version": "0.1.0",
+  "private": "true",
+  "scripts": {
+    "play": "spago build && cp src/LazyImportImpl.js output && parcel build public/index.js && node dist/index.js"
+  },
+  "author": "PureFunctor",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "targets": {
+    "default": {
+      "context": "node",
+      "engines": {
+   	"node": "14"
+      }
+    }
+  }
+}
